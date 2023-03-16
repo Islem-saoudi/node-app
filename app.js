@@ -1,5 +1,18 @@
-function sayHello() {
-    console.log('hello')
-}
+// const x = 1;
 
-sayHello();
+// module.exports = {
+//     "newArray" : [1, 2, 3],
+
+//     "hello" : function sayHello(name) {
+//         const x = 30;
+//         return `Hello ${name} + ${x}`;
+//     },
+
+    
+
+// }
+
+module.exports = {
+    "studentName" : "",
+    "studentAge" : ""
+}
