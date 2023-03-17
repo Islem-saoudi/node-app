@@ -10,5 +10,6 @@
 
 // console.log(welcome.newArray);
 
-const donia = require("./donia.js");
+
 const khalil = require("./khalil.js");
+const donia = require("./donia.js");
