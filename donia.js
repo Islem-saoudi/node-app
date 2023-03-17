@@ -1,4 +1,4 @@
-const studentData = require("./app");
+const studentData = require("./app.js");
 
 
 studentData.studentName = "Donia";
