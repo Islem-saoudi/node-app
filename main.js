@@ -11,5 +11,14 @@
 // console.log(welcome.newArray);
 
 
-const khalil = require("./khalil.js");
-const donia = require("./donia.js");
+// const khalil = require("./khalil.js");
+// const donia = require("./donia.js");
+
+const fs = require('node:fs'); //common JScode
+
+//import * as fs from 'node:fs'; // ECMA Script Module(ESM) code
+
+const files = fs.readdirSync('./');
+
+console.log(files)
+  
