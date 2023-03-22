@@ -30,4 +30,14 @@ const pathObj = path.parse(__filename);
 
 console.log(pathObj);
 
-// *** OS
+// *** OS (Operating System)
+ 
+const os = require('node:os');
+
+const freeMem = os.freemem();
+
+const totalMem = os.totalmem();
+
+console.log(`
+Total memory: ${totalMem}
+Free Memory: ${freeMem}`)
