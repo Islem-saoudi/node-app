@@ -14,6 +14,8 @@
 // const khalil = require("./khalil.js");
 // const donia = require("./donia.js");
 
+// *** File System (FS)
+
 //const fs = require('node:fs'); //common JScode
 
 //import * as fs from 'node:fs'; // ECMA Script Module(ESM) code
@@ -24,20 +26,32 @@
 
 // ***path
   
-const path = require('node:path');
+// const path = require('node:path');
 
-const pathObj = path.parse(__filename);
+// const pathObj = path.parse(__filename);
 
-console.log(pathObj);
+// console.log(pathObj);
 
 // *** OS (Operating System)
  
-const os = require('node:os');
+// const os = require('node:os');
 
-const freeMem = os.freemem();
+// const freeMem = os.freemem();
 
-const totalMem = os.totalmem();
+// const totalMem = os.totalmem();
 
-console.log(`
-Total memory: ${totalMem}
-Free Memory: ${freeMem}`)
+// console.log(`
+// Total memory: ${totalMem}
+// Free Memory: ${freeMem}`)
+
+
+const fs = require('node:fs'); //common JScode
+
+const files = fs.readdir('./', function (err, files) {
+
+    if (err) console.log(`Error`, err);
+    
+    else console.log(`Result`, files);
+});
+
+console.log(files)
