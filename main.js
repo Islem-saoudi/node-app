@@ -47,11 +47,20 @@
 
 const fs = require('node:fs'); //common JScode
 
-const files = fs.readdir('./', function (err, files) {
 
-    if (err) console.log(`Error`, err);
+// ***CJS
+// const files = fs.readdir('./', function (err, files) {
+
+//     if (err) console.log(`Error`, err);
     
-    else console.log(`Result`, files);
+//     else console.log(`Result`, files);
+// });
+
+
+// ***ESM
+const files = fs.readdir('./', (err, files) => {
+
+    (err) ? console.log(`Error`, err) : console.log(`Result`, files);
 });
 
 console.log(files)
