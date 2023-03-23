@@ -45,7 +45,7 @@
 // Free Memory: ${freeMem}`)
 
 
-const fs = require('node:fs'); //common JScode
+//const fs = require('node:fs'); //common JScode
 
 
 // ***CJS
@@ -58,9 +58,18 @@ const fs = require('node:fs'); //common JScode
 
 
 // ***ESM
-const files = fs.readdir('./', (err, files) => {
+// const files = fs.readdir('./', (err, files) => {
 
-    (err) ? console.log(`Error`, err) : console.log(`Result`, files);
+//     (err) ? console.log(`Error`, err) : console.log(`Result`, files);
+// });
+
+// console.log(files)
+
+const fs = require('node:fs');
+
+const data = fs.readFile('./students.json', (e, result) => {
+    e ? console.error(e) : console.log(result.toString());
+ 
 });
 
-console.log(files)
+console.log(data)
