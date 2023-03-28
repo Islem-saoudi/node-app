@@ -10,4 +10,7 @@ emitter.addListener("logged", ()=>{
     console.log(`logged by add listener`)
 });
 
-emitter.emit("logged");
+const log = require('./app')
+
+log.log
+//emitter.emit("logged");

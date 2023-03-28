@@ -12,7 +12,19 @@
 
 // }
 
+
+const EventEmitter = require('node:events');
+
+const emitter = new EventEmitter;
+
+emitter.on("logged", ()=>{
+    console.log(`logged by on`)
+})
+
 module.exports = {
     "studentName" : "",
-    "studentAge" : ""
+    "studentAge" : "",
+    "log" : ()=> {
+        emitter.emit('logged');
+    }
 }
