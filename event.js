@@ -2,17 +2,16 @@ const EventEmitter = require('node:events');
 
 const emitter = new EventEmitter;
 
-emitter.on("logged", ()=>{
-    console.log(`logged by on`)
+emitter.on("logged", (...e)=>{
+    console.log(`logged by on with ID`, e[0])
 })
 
-emitter.addListener("logged", ()=>{
-    console.log(`logged by add listener`)
+emitter.addListener("logged", (...e)=>{
+    console.log(`logged by add listener with ID`, e[1])
 });
 
-const log = require('./app.js')
+emitter.emit("logged", "azert145", "wxcfdr548");
 
-log.log()
+// const log = require('./app.js')
 
-
-//emitter.emit("logged");
+// log.log()
