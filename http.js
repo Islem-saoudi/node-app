@@ -9,3 +9,5 @@ server.on('connection', (e) => {
 server.listen('connection', (e) => {
     console.log(`new connection`);
 })
+
+server.listen();
