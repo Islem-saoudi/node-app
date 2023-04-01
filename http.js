@@ -6,8 +6,4 @@ server.on('connection', (e) => {
     console.log(`new connection`);
 })
 
-server.listen('connection', (e) => {
-    console.log(`new connection`);
-})
-
-server.listen();
+// server.listen(3000, () => console.log);
