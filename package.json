@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Islem-saoudi/node-app/issues"
   },
-  "homepage": "https://github.com/Islem-saoudi/node-app#readme"
+  "homepage": "https://github.com/Islem-saoudi/node-app#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
