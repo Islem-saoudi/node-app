@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/Islem-saoudi/node-app/issues"
   },
-  "homepage": "https://github.com/Islem-saoudi/node-app#readme",
-  "dependencies": {
-    "lodash": "^4.17.21"
-  }
+  "homepage": "https://github.com/Islem-saoudi/node-app#readme"
 }
